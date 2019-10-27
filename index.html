@@ -29,8 +29,7 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-
+      <div id="currentDay"></div>
     </header>
     
     <div class="container">
@@ -41,13 +40,10 @@
                             <p class='hour'>9AM</p>
                         </div>
                         <div class="col-10">
-                            <textarea class="form-control"  type='text' placeholder= 'placeholder'  rows="2.9"></textarea>
-                            <div class="past"></div>
-                            <div class="present"></div>
-                            <div class="future"></div>
+                            <textarea id ='nineText' class="form-control"  type='text' placeholder= 'placeholder'  rows="2.9"></textarea>
                         </div>
-                        <div class="col-1">
-                            <button class="saveBtn btn-primary btn-lg" type="submit">Save</button>
+                        <div class="col-md-1">
+                            <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit">Save</button>
                         </div>
                     </div>
             </div>
@@ -57,118 +53,112 @@
                             <p class='hour'>10AM</p>
                         </div>
                         <div class="col-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>   
-                            <div class="past"></div>
-                            <div class="present"></div>
-                            <div class="future"></div>
+                            <textarea id = 'tenText' class="form-control" type='text' placeholder = 'placeholder' rows="2.9"></textarea>   
+                            
                         </div>
-                        <div class="col-1">
-                            <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Save</button>
+                        <div class="col-md-1">
+                            <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit" >Save</button>
                         </div>
                     </div>  
+            <div class="time-block">
                     <div class ="row">
                         <div class="col-1">
                             <p class='hour'>11AM</p>
                         </div>
                         <div class="col-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>           
-                            <div class="past"></div>
-                            <div class="present"></div>
-                            <div class="future"></div>
+                            <textarea id= 'elevenText' class="form-control" type='text' placeholder = 'placeholder' rows="2.9"></textarea>           
+                            
                         </div>
                         <div class="col-1">
-                            <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Save</button>
+                            <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit" >Save</button>
                         </div>
                     </div>  
+            </div>        
+            <div class="time-block">
                     <div class ="row">
                             <div class="col-1">
                                 <p class='hour'>12PM</p>
                             </div>
-                            <div class="col-10">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>           
-                                <div class="past"></div>
-                                <div class="present"></div>
-                                <div class="future"></div>
+                            <div class="col-md-10">
+                                <textarea id='twelveText' class="form-control" type='text' placeholder = 'placeholder' rows="2.9"></textarea>           
+                                
                             </div>
-                            <div class="col-1">
-                                <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Save</button>
+                            <div class="col-md-1">
+                                <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit" >Save</button>
                             </div>
                     </div>  
+            </div>
+            <div class="time-block">    
                     <div class ="row">
-                            <div class="col-1">
+                            <div class="col-md-1">
                                 <p class='hour'>1PM</p>
                             </div>
-                            <div class="col-10">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>           
-                                <div class="past"></div>
-                                <div class="present"></div>
-                                <div class="future"></div>
+                            <div class="col-md-10">
+                                <textarea id='oneText' class="form-control" type='text' placeholder= "placeholder" rows="2.9"></textarea>           
+                                
                             </div>
-                            <div class="col-1">
-                                <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Save</button>
+                            <div class="col-md-1">
+                                <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit" onclick>Save</button>
                             </div>
-                    </div>  
+                    </div> 
+            </div>
+            <div class="time-block">
                     <div class ="row">
-                            <div class="col-1">
+                            <div class="col-md-1">
                                 <p class='hour'>2PM</p>
                             </div>
-                            <div class="col-10">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>           
-                                <div class="past"></div>
-                                <div class="present"></div>
-                                <div class="future"></div>
+                            <div class="col-md-10">
+                                <textarea id='twoText' class="form-control" type='text' placeholder="placeholder" rows="2.9"></textarea>           
+                                
                             </div>
-                            <div class="col-1">
-                                <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Save</button>
+                            <div class="col-md-1">
+                                <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit" >Save</button>
                             </div>
                     </div>  
+            </div>
+            <div class="time-block">
                     <div class ="row">
-                            <div class="col-1">
+                            <div class="col-md-1">
                                 <p class='hour'>3PM</p>
                             </div>
-                            <div class="col-10">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>           
-                                <div class="past"></div>
-                                <div class="present"></div>
-                                <div class="future"></div>
+                            <div class="col-md-10">
+                                <textarea id=threeText class="form-control" type='text' placeholder='placeholder' rows="2.9"></textarea>           
+                                
                             </div>
-                            <div class="col-1">
-                                <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Save</button>
+                            <div class="col-md-1">
+                                <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit" >Save</button>
                             </div>
                     </div> 
+            </div>
+            <div class="time-block">
                     <div class ="row">
-                            <div class="col-1">
+                            <div class="col-md-1">
                                 <p class='hour'>4PM</p>
                             </div>
-                            <div class="col-10">
-                                <form>
+                            <div class="col-md-10">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>           
-                                        <div class="past"></div>
-                                        <div class="present"></div>
-                                        <div class="future"></div>
+                                        <textarea id= 'fourText' class="form-control" type='text' placeholder="placeholder" rows="2.9"></textarea>           
                                     </div>
-                                </form>
                             </div>
-                            <div class="col-1">
-                                <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Large</button>
+                            <div class="col-md-1">
+                                <button class="input-group-addon saveBtn btn-primary btn-lg" type="submit" >Save</button>
                             </div>
                     </div> 
+            </div>
+            <div class="time-block">
                     <div class ="row">
-                            <div class="col-1">
+                            <div class="col-md-1">
                                 <p class='hour'>5PM</p>
                             </div>
-                            <div class="col-10">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2.9"></textarea>           
-                                <div class="past"></div>
-                                <div class="present"></div>
-                                <div class="future"></div>
+                            <div class="col-md-10">
+                                <textarea id='fiveText' class="form-control" type='text' placeholder= 'placeholder' rows="2.9"></textarea>           
+                                
                             </div>
-                            <div class="col-1">
-                                <button class="saveBtn btn-primary btn-lg" type="submit" onclick="">Large</button>
+                            <div class="col-md-1">
+                                <button class="input-group-addon saveBtn btn-primary btn-lg" formarget = type="submit" >Save</button>
                             </div>
-                            
-                    </div>    
+                    </div> 
+            </div>   
         </div>    
     </div>
     <script src="lib/moment/moment.min.js"></script>
