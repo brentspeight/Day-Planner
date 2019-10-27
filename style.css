@@ -24,7 +24,10 @@ body {
   .description{
     white-space: pre-wrap;
   }
-  
+  #currentDay{
+    color: blue;
+    font-size: 30px
+  }
   .time-block{
     text-align: right;
     border-radius: 15px;
